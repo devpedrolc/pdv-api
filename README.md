@@ -1,4 +1,4 @@
-# 📌 API PDV - Sistema de Vendas
+# API PDV (Ponto de Venda) - Java + Spring Boot
 
 API REST de um sistema de ponto de venda (PDV), desenvolvida com Java e Spring Boot.
 
@@ -25,7 +25,17 @@ API REST de um sistema de ponto de venda (PDV), desenvolvida com Java e Spring B
 - Banco de dados: H2 / MySQL  
 
 ---
+## 📌 Endpoints
 
+### Produtos
+POST /produtos → Cadastrar produto  
+GET /produtos → Listar produtos  
+
+### Vendas
+POST /vendas → Criar venda  
+POST /vendas/{id}/itens → Adicionar item  
+PUT /vendas/{id}/finalizar → Finalizar venda  
+POST /vendas/{id}/pagar → Realizar pagamento  
 ## 📦 Como executar o projeto
 
 ```bash
