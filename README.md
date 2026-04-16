@@ -36,6 +36,12 @@ POST /vendas → Criar venda
 POST /vendas/{id}/itens → Adicionar item  
 PUT /vendas/{id}/finalizar → Finalizar venda  
 POST /vendas/{id}/pagar → Realizar pagamento  
+## 🧠 Regras de negócio
+
+- Não é possível adicionar itens em uma venda finalizada
+- Estoque é reduzido ao adicionar item
+- Venda só pode ser paga após ser finalizada
+- Troco é calculado automaticamente
 ## 📦 Como executar o projeto
 
 ```bash
